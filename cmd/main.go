@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"hiodoshi-go/internal/handlers"
 	"hiodoshi-go/internal/services"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
