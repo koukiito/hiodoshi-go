@@ -7,8 +7,6 @@ import (
 )
 
 func main() {
-	//cfg := config.Load()
-
 	r := gin.Default()
 
 	hiodoshiService := services.NewHiodoshiService()
@@ -18,8 +16,6 @@ func main() {
 	{
 		api.GET("/hiodoshi-go", hiodoshiHandler.GetHiodoshi)
 	}
-
-	//log.Fatal(r.Run(":" + cfg.Port))
 
 	r.Run(":8080")
 }
